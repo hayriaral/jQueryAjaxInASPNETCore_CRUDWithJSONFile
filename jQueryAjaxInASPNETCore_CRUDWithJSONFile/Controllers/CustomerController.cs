@@ -17,7 +17,7 @@ namespace jQueryAjaxInASPNETCore_CRUDWithJSONFile.Controllers
             string json = wc.DownloadString(dataSource);
             return json;
         }
-        public IActionResult ListCustomer()
+        public IActionResult Index()
         {
             string json = GetJsonFile("https://raw.githubusercontent.com/hayricaral/jQueryAjaxInASPNETCore_CRUDWithJSONFile/master/Customers.json");
             CustomerList CurrentCustomerList = new CustomerList();
